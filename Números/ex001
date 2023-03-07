@@ -1,0 +1,9 @@
+'''Carregue a data atual do computador e, com base na data atual, apresente a data de dois dias no futuro'''
+
+import datetime
+
+data_futura = datetime.date.today() + datetime.timedelta(days=2)
+
+data = data_futura.strftime('%d/%m/%Y')
+
+print(f'A data daqui a dois dias será: {data}')
